@@ -1,4 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -11,14 +22,54 @@ a {
   margin: 0;
 }
 
+p {margin: 0;}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-family: 'Comfortaa', cursive;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.button {
+  display: inline-block;
+  width: 130px;
+  /* height: 40px; */
+  padding: 11px 20px;
+  border-radius: 6px;
+  border: 1px solid #18a0fb;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  text-align: center;
+}
+
+.button.ascent {
+  color: #fff;
+  background: #18a0fb;
+}
+
+.button.second {
+  color: #18a0fb;
+  background: #fff;
 }
 
 .list {
@@ -28,6 +79,7 @@ h6 {
 }
 
 .container {
+  outline: 1px dotted #000;
   width: 1680px;
   padding-left: 80px;
   padding-right: 80px;
@@ -48,6 +100,7 @@ h6 {
   padding-bottom: 14px;
   display: block;
   color: #000;
+  font-family: 'Comfortaa', cursive;
   font-size: 28px;
   line-height: 32px;
   margin-right: 70px;
@@ -71,7 +124,23 @@ h6 {
   margin-left: auto;
 }
 
-.button {
+.auth-nav .button {
+  margin-right: 11px;
+}
+
+.section {
+  outline: 1px dotted #000;
+  padding-top: 120px;
+  padding-bottom: 120px;
+ 
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: -0.015em;
+  color: #000000;
 }
 
 .hero {
@@ -90,10 +159,12 @@ h6 {
   letter-spacing: -0.015em;
   color: #000000;
 }
+
 .btn {
   display: block;
-  width: 192px;
-  height: 52px;
+  min-width: 192px;
+  padding: 15px 20px;
+  /* height: 52px; */
   margin: 0 auto;
   color: #fff;
   background: #18a0fb;
@@ -101,45 +172,59 @@ h6 {
   border: 1px solid #18a0fb;
 }
 
-.section-title {
-  padding-top: 120px;
-  margin-bottom: 60px;
-  font-size: 48px;
-  line-height: 72px;
-  letter-spacing: -0.015em;
-  color: #000000;
-}
-.advantages-list {
+.advant-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.advantages-item {
+.advant-list > .advant-item {
   width: calc((100% - 148px) / 2);
   margin-right: 148px;
   margin-bottom: 60px;
 }
 
-.advantages-item:nth-child(2n) {
+.advant-item:nth-child(2n) {
   margin-right: 0;
 }
 
-.advantages-item:nth-last-child(-n + 2) {
+.advant-item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
-.advantages-subtitle {
+.advant-subtitle {
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.015em;
   color: #000000;
 }
-.advantages-text {
+
+.advant-text {
+  margin-bottom: 32px;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.015em;
   color: rgba(0, 0, 0, 0.8);
 }
-.advantages-link {
+
+.section.work {
+padding: 0;
+}
+
+.work-title {
+  margin-bottom: 24px;
+}
+
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.work-list > .item:nth-child(2n) {
+  background-color: #F5F5F5;
+}
+
+.section.signup {
+  background-color: #F5F5F5;
 }
