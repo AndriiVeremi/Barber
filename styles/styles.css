@@ -22,7 +22,9 @@ a {
   margin: 0;
 }
 
-p {margin: 0;}
+p {
+  margin: 0;
+}
 
 h1,
 h2,
@@ -30,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -51,10 +53,10 @@ h6 {
 .button {
   display: inline-block;
   width: 130px;
-  /* height: 40px; */
   padding: 11px 20px;
   border-radius: 6px;
   border: 1px solid #18a0fb;
+ 
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
@@ -96,27 +98,39 @@ h6 {
 }
 
 .logo {
+  display: block;
   padding-top: 14px;
   padding-bottom: 14px;
-  display: block;
+  margin-right: 70px;
+  
   color: #000;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   font-size: 28px;
   line-height: 32px;
-  margin-right: 70px;
 }
 
 .site-nav {
   display: flex;
+
+  color: #18a0fb;
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   letter-spacing: -0.015em;
-  color: #18a0fb;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
 }
 
 .site-nav .link {
-  margin-right: 40px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.site-nav .link:hover {
+  color: #000;
 }
 
 .auth-nav {
@@ -124,23 +138,31 @@ h6 {
   margin-left: auto;
 }
 
-.auth-nav .button {
-  margin-right: 11px;
+.auth-nav .item + .item {
+  margin-left: 12px;
 }
+
+/* .auth-nav .button {
+  margin-right: 11px;
+} */
 
 .section {
   outline: 1px dotted #000;
   padding-top: 120px;
   padding-bottom: 120px;
- 
 }
 
 .section-title {
   margin-bottom: 30px;
+  
   font-size: 48px;
   line-height: 72px;
   letter-spacing: -0.015em;
   color: #000000;
+}
+
+.section-title.centre {
+  text-align: center;
 }
 
 .hero {
@@ -150,9 +172,10 @@ h6 {
   margin: 0 auto;
 }
 .hero-title {
-  text-align: center;
   padding-top: 632px;
   margin-bottom: 40px;
+  text-align: center;
+  
   font-size: 56px;
   line-height: 80px;
   text-align: center;
@@ -164,8 +187,8 @@ h6 {
   display: block;
   min-width: 192px;
   padding: 15px 20px;
-  /* height: 52px; */
   margin: 0 auto;
+  text-align: center;
   color: #fff;
   background: #18a0fb;
   border-radius: 6px;
@@ -193,11 +216,12 @@ h6 {
 
 .advant-subtitle {
   margin-bottom: 24px;
+  
+  color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: -0.015em;
-  color: #000000;
 }
 
 .advant-text {
@@ -208,23 +232,82 @@ h6 {
   color: rgba(0, 0, 0, 0.8);
 }
 
+
+
+
 .section.work {
-padding: 0;
+  padding: 0;
 }
 
-.work-title {
+.description-title {
   margin-bottom: 24px;
 }
 
 .work-list > .item {
+  display: flex;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
 .work-list > .item:nth-child(2n) {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
+  flex-direction: row-reverse;
 }
 
+.work-list > .item:nth-child(2n + 1) .description {
+ margin-left: 84px;
+}
+
+.work-list > .item:nth-child(even) .description {
+ margin-right: 84px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.company-text {
+  text-align: center;
+}
+
+.company-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1060px;
+  margin: -30px -45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.company-item {
+  margin: 30px 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section.signup {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
