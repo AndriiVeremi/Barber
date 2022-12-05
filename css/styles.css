@@ -413,6 +413,11 @@ body {
   max-width: 500px;
 }
 
+.traditional-description .section-subtitle,
+.traditional-description .section-title {
+   margin-bottom: 20px;
+}
+
 .description-text {
   font-family: "Open Sans";
   font-style: normal;
