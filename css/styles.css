@@ -415,7 +415,7 @@ body {
 
 .traditional-description .section-subtitle,
 .traditional-description .section-title {
-   margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .description-text {
@@ -426,4 +426,97 @@ body {
   line-height: 30px;
   letter-spacing: 0.02em;
   color: #555555;
+}
+
+/* Стилі блоку барбери */
+
+.barbers {
+  background-color: #f7f7f7;
+}
+
+.barbers .container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.barbers .section-subtitle {
+  margin-bottom: 20px;
+}
+
+.barbers .section-title {
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+}
+
+.barbers-list .item {
+  width: calc((100% - 60px) / 3);
+  text-align: center;
+}
+
+.barbers-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.barbers-foto {
+  margin-bottom: 30px;
+}
+
+.barbers-name {
+  margin-bottom: 8px;
+}
+
+.barbers-extrem {
+  margin-bottom: 30px;
+  color: #ff6c00;
+}
+
+
+
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-item {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.social-link {
+  display: block;
+  margin-top: 12px;
+  fill: #303030;
+}
+
+.social-item:hover .social-link {
+  fill: #ff6c00;
+}
+
+
+
+
+
+
+.portfolio .container {
+   padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio .section-subtitle {
+  margin-bottom: 44px;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio-list .item {
+  width: calc((100% - 90px) / 4);
 }
