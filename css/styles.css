@@ -473,9 +473,6 @@ body {
   color: #ff6c00;
 }
 
-
-
-
 .social-list {
   display: flex;
   justify-content: center;
@@ -499,13 +496,10 @@ body {
   fill: #ff6c00;
 }
 
-
-
-
-
+/* Стилі блоку портфоліо */
 
 .portfolio .container {
-   padding-top: 120px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -519,4 +513,157 @@ body {
 }
 .portfolio-list .item {
   width: calc((100% - 90px) / 4);
+}
+
+
+
+
+
+/* Стилі блоку контакти */
+
+.contacts {
+  background-color: #191c26;
+}
+
+.contacts .container {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts .section-title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+}
+
+.booking-form input {
+  padding-bottom: 8px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-bottom: 1px solid #fff;
+  outline: transparent;
+  color: #fff;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.booking-form input:focus::placeholder,
+.booking-form textarea:focus::placeholder {
+  color: #fff;
+}
+
+.booking-form input {
+  width: 270px;
+  height: 24px;
+  margin-bottom: 44px;
+}
+
+.booking-form .textarea-wrapper {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.booking-form textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+  display: block;
+}
+
+
+
+.booking-form .name-input + input {
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стилі блоку футер */
+
+.footer {
+  background-color: #f7f7f7;
+}
+
+.footer .container {
+  display: flex;
+    font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
+
+.footer .copyright {
+  padding: 56px 0;
+  color: #9da4bd;
+}
+
+.footer-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.footer-list::before {
+  content: " ";
+  margin-right: 40px;
+  background-color: #303030;
+  height: 1px;
+  width: 60px;
+}
+
+.footer-list .item {
+  color: #303030;
+}
+
+.footer-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-list .item:hover {
+  color: #ff6c00;
 }
