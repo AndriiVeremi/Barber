@@ -36,7 +36,7 @@
             <a class="link" href="tel:380441111111">+38 044 111 11 11</a>
           </li>
           <li class="item">
-            <button class="button">Online-booking</button>
+            <button class="button" data-modal-open >Online-booking</button>
           </li>
         </ul>
       </div>
@@ -77,7 +77,7 @@
             the hands of our master, you will never be the same again. We are a team that is always "on the same wave"
             with clients. Therefore, we are always ready to improve everyone who comes to us!
           </p>
-          <button class="button black">Online-booking</button>
+          <button class="button black" data-modal-open >Online-booking</button>
         </div>
       </div>
     </section>
@@ -129,7 +129,7 @@
           </ul>
         </div>
 
-        <button class="button">online-booking</button>
+        <button class="button" data-modal-open >online-booking</button>
       </div>
     </section>
 
@@ -316,7 +316,7 @@
             <div class="textarea-wrapper">
               <textarea name="booking-text" cols="5" rows="4" placeholder="Message"></textarea>
             </div>
-            <button type="submit" class="button">send</button>
+            <button type="submit" class="button" data-modal-open >send</button>
           </form>
         </div>
 
@@ -358,12 +358,25 @@
 
     <footer class="footer">
       <div class="container">
-        <p class="copyright">U+000A9 Copyright 2022</p>
+        <p class="copyright">&copyCopyright 2022</p>
         <ul class="footer-list list">
           <li class="item"><a href="#">Instagram</a></li>
           <li class="item"><a href="#">Youtube</a></li>
         </ul>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+
+    <div class="modal-backdrop is_hidden" data-modal>
+      <div class="modal">
+        <div class="close-icon" data-modal-close>X</div>
+
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
   </body>
 </html>
