@@ -515,14 +515,10 @@ body {
   width: calc((100% - 90px) / 4);
 }
 
-
-
-
-
 /* Стилі блоку контакти */
 
 .contacts {
-  background-color: #191c26;
+  background: #191c26 url(../images/contacts_bg.png) right no-repeat;
 }
 
 .contacts .container {
@@ -536,10 +532,18 @@ body {
   margin-bottom: 40px;
 }
 
+.booking-area {
+  margin-right: 130px;
+}
+
 .booking-form {
   display: flex;
   flex-wrap: wrap;
   width: 570px;
+}
+
+.booking-form .button {
+  width: 160px;
 }
 
 .booking-form input {
@@ -591,38 +595,66 @@ body {
   display: block;
 }
 
-
-
 .booking-form .name-input + input {
   margin-left: 30px;
 }
 
+.working-hours {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
 
+.working-hours::before {
+  content: " ";
+  background-color: #9da4bd;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
+}
 
+.working-time {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
 
+.contacts-list {
+  margin-bottom: 70px;
+}
 
+.contacts-list .item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+  margin-bottom: 20px;
+}
 
+.contacts-list .item span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.item-icon {
+  fill: transparent;
+  stroke: #9da4bd;
+  width: 24px;
+  height: 24px;
+}
 
 /* Стилі блоку футер */
 
@@ -632,7 +664,7 @@ body {
 
 .footer .container {
   display: flex;
-    font-size: 11px;
+  font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.2em;
 }
