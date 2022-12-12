@@ -77,6 +77,15 @@ body {
   color: #ffffff;
   background-color: inherit;
   cursor: pointer;
+  transition: transform 250ms linear;
+}
+
+.button:hover {
+  transform: scale(1.02);
+}
+
+.button:active {
+  transform: scale(0.95);
 }
 
 .button.black {
@@ -181,7 +190,7 @@ body {
   padding: 270px 526px 208px 100px;
   background-color: #2d2c2c;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url(../images/hero-description-bg.jpg);
+    url(../images/desktop/hero_bd.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -295,7 +304,7 @@ body {
 /* Стилі блоку ціни */
 
 .services {
-  background: #111319 url(../images/service_bg.png) no-repeat;
+  background: #111319 url(../images/desktop/service_bg.png) no-repeat;
   background-size: cover;
 }
 
@@ -518,7 +527,7 @@ body {
 /* Стилі блоку контакти */
 
 .contacts {
-  background: #191c26 url(../images/contacts_bg.png) right no-repeat;
+  background: #191c26 url(../images/desktop/contacts-bg.png) right no-repeat;
 }
 
 .contacts .container {
