@@ -46,6 +46,10 @@ body {
   font-style: normal;
 }
 
+.hero-text.text {
+  
+}
+
 .list {
   list-style: none;
   padding: 0;
