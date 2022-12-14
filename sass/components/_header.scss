@@ -1,13 +1,20 @@
+// .header {
+//     position: relative;
+// }
 .header .container {
     display: flex;
+    background-color: initial;
+    
+}
+
+.header-logo {
+    padding-top: 40px;
 }
 
 .mobile-menu {
+    padding-top: 48px;
     margin-left: auto;
 }
-
-
-
 
 .nav {
     display: none;

@@ -285,15 +285,32 @@ h6 {
   width: 480px;
   padding-left: 31px;
   padding-right: 31px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: initial;
+}
+
+.header-logo {
+  padding-top: 40px;
 }
 
 .mobile-menu {
+  padding-top: 48px;
   margin-left: auto;
 }
 
@@ -303,4 +320,19 @@ h6 {
 
 .contact-list {
   display: none;
+}
+
+.hero {
+  background-image: url(/images/mobile/hero_bd_480.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 480px;
+}
+
+.hero-social {
+  display: none;
+}
+
+.hero-description {
+  padding: 208px 0;
 }/*# sourceMappingURL=main.css.map */
