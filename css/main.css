@@ -282,7 +282,7 @@ h6 {
 }
 
 .container {
-  width: 480px;
+  width: 418px;
   padding-left: 31px;
   padding-right: 31px;
   margin: 0 auto;
@@ -298,6 +298,19 @@ h6 {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,27 +319,72 @@ h6 {
 }
 
 .header-logo {
+  fill: #fff;
   padding-top: 40px;
 }
 
 .mobile-menu {
   padding-top: 48px;
   margin-left: auto;
+  fill: #fff;
 }
 
-.nav {
-  display: none;
-}
-
+.nav,
 .contact-list {
   display: none;
 }
 
 .hero {
-  background-image: url(/images/mobile/hero_bd_480.jpg);
+  height: 580px;
+  width: 480px;
+  margin: 0 auto;
+  background-color: #2d2c2c;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../images/mobile/hero_bd_480.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../images/mobile/hero_bd_480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 480px;
+}
+
+.hero-description .hero-subtitle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-description .hero-title {
+  width: 470px;
+  margin-bottom: 20px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.hero-description .hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.hero-subtitle::before {
+  content: " ";
+  background-color: #9da4bd;
+  height: 1px;
+  width: 60px;
+  margin-right: 20px;
 }
 
 .hero-social {

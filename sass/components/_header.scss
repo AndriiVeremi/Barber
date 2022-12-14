@@ -1,25 +1,26 @@
-// .header {
-//     position: relative;
-// }
+.header {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 .header .container {
     display: flex;
-    background-color: initial;
-    
+    background-color: initial;  
 }
 
 .header-logo {
+    fill: #fff;
     padding-top: 40px;
 }
 
 .mobile-menu {
     padding-top: 48px;
     margin-left: auto;
+    fill: #fff;
 }
 
-.nav {
-    display: none;
-}
-
+.nav,
 .contact-list {
     display: none;
 }
