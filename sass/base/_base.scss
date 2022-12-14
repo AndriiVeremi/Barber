@@ -1,5 +1,5 @@
 .container {
-    width: 418px;
+    width: 480px;
     padding-left: 31px;
     padding-right: 31px;
     margin: 0 auto;
@@ -19,4 +19,60 @@ img {
     display: block;
     width: 100%;
     height: auto;
+}
+
+
+
+.section-subtitle-mobile {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.section-subtitle-mobile::before {
+  content: " ";
+  margin-right: 20px;
+  background-color: #303030;
+  height: 1px;
+  width: 60px;
+}
+
+.section-title-mobile {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.section-subtitle {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #303030;
+}
+
+.section-subtitle::before {
+  content: " ";
+  margin-right: 20px;
+  background-color: #303030;
+  height: 1px;
+  width: 60px;
+}
+
+.section-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+  color: #303030;
 }
