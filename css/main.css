@@ -281,6 +281,14 @@ h6 {
   margin-bottom: 0;
 }
 
+body {
+  background-color: #ffffff;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .container {
   width: 480px;
   padding-left: 31px;
@@ -304,37 +312,6 @@ img {
   height: auto;
 }
 
-.section-subtitle-mobile {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 11px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #303030;
-}
-
-.section-subtitle-mobile::before {
-  content: " ";
-  margin-right: 20px;
-  background-color: #303030;
-  height: 1px;
-  width: 60px;
-}
-
-.section-title-mobile {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
-  color: #303030;
-}
-
 .section-subtitle {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -342,6 +319,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 600;
   font-size: 11px;
   line-height: 15px;
   text-transform: uppercase;
@@ -358,11 +336,42 @@ img {
 
 .section-title {
   font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
   font-size: 42px;
   line-height: 1.1666666667;
   letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: inherit;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.button.black {
   color: #303030;
 }
 
@@ -461,8 +470,8 @@ img {
 .about-description {
   padding: 84px 0;
 }
-.about-description .section-title-mobile,
-.about-description .section-subtitle-mobile {
+.about-description .section-title,
+.about-description .section-subtitle {
   margin-bottom: 20px;
 }
 
