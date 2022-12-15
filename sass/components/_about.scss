@@ -1,0 +1,37 @@
+.about-list {
+  display: none;
+}
+.about-description {
+  padding: 84px 0;
+  & .section-title,
+  .section-subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+// .about-description {
+//   max-width: 470px;
+// }
+
+// .about-description .section-title,
+// .about-description .section-subtitle {
+//   margin-bottom: 20px;
+// }
+
+.about-desc {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-text {
+  margin-bottom: 42px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
