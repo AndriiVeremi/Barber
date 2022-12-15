@@ -21,7 +21,7 @@
 
 .header .link {
   font-size: 12px;
-  line-height: 16px;
+  line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   color: #ffffff;
 }
@@ -79,7 +79,7 @@
 
 .hero-list .item {
   font-size: 11px;
-  line-height: 15px;
+  line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: #303030;
 }
@@ -105,7 +105,7 @@
   align-items: center;
   margin-bottom: 20px;
   font-size: 11px;
-  line-height: 15px;
+  line-height: calc(15 / 11);
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
@@ -117,7 +117,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 72px;
-  line-height: 85px;
+  line-height: calc(85 / 72);
   letter-spacing: 0.05em;
   color: #ffffff;
 }
@@ -125,7 +125,7 @@
 .hero-description .hero-text {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
@@ -168,7 +168,7 @@
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #555555;
 }
@@ -177,7 +177,7 @@
   margin-bottom: 42px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 26px;
+  line-height: calc(26 / 14);
   letter-spacing: 0.02em;
   color: #555555;
 }
@@ -228,7 +228,7 @@
 .serv {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
@@ -279,7 +279,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 42px;
-  line-height: 57px;
+  line-height: calc(57 / 42);
   text-align: center;
   letter-spacing: 0.05em;
   color: #303030;
@@ -287,14 +287,14 @@
 
 .traditional-list .sign {
   font-size: 16px;
-  line-height: 22px;
+  line-height: calc(22 / 16);
   text-align: center;
   color: #ff6c00;
 }
 
 .traditional-list .text {
   font-size: 11px;
-  line-height: 15px;
+  line-height: calc(15 / 11);
   text-align: center;
   color: #303030;
 }
@@ -313,12 +313,12 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #555555;
 }
 
-/* Стилі блоку барбери */
+/* Barbers */
 
 .barbers {
   background-color: #f7f7f7;
@@ -405,10 +405,10 @@
   width: calc((100% - 90px) / 4);
 }
 
-/* Стилі блоку контакти */
+/* Contacts */
 
 .contacts {
-  background: #191c26 url(../images/desktop/contacts-bg.png) 67% no-repeat;
+  background: #191c26 url(../images/desktop/contacts-bg.png) 80% no-repeat;
 }
 
 .contacts .container {
@@ -496,7 +496,7 @@
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: calc(15 / 11);
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
@@ -513,7 +513,7 @@
 .working-time {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
@@ -525,7 +525,7 @@
 .contacts-list .item {
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
   margin-bottom: 20px;
@@ -534,7 +534,7 @@
 .contacts-list .item span {
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
@@ -555,7 +555,7 @@
 .footer .container {
   display: flex;
   font-size: 11px;
-  line-height: 15px;
+  line-height: calc(15 / 11);
   letter-spacing: 0.2em;
 }
 
@@ -590,9 +590,9 @@
   color: #ff6c00;
 }
 
-/* Стилі модального вікна */
+/* Modal */
 
-.modal-backdrop {
+/* .modal-backdrop {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -618,4 +618,4 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
