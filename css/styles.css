@@ -321,6 +321,7 @@
 /* Barbers */
 
 .barbers {
+  min-width: 480px;
   background-color: #f7f7f7;
 }
 
